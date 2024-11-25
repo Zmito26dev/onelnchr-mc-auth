@@ -1,10 +1,11 @@
 # Minecraft-auth package
-![npm bundle size](https://img.shields.io/bundlephobia/min/minecraft-auth?label=npm%20size)
-![GitHub package.json version](https://img.shields.io/github/package-json/v/dommilosz/minecraft-auth)
-![GitHub top language](https://img.shields.io/github/languages/top/dommilosz/minecraft-auth)
-![npm](https://img.shields.io/npm/dt/minecraft-auth)
+![npm bundle size](https://img.shields.io/bundlephobia/min/onelnchr-mc-auth?label=npm%20size)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/dommilosz/onelnchr-mc-auth)
+![GitHub top language](https://img.shields.io/github/languages/top/dommilosz/onelnchr-mc-auth)
+![npm](https://img.shields.io/npm/dt/onelnchr-mc-auth)
 
 Minecraft-auth is a package to authenticate and get minecraft access tokens.
+Fork of minecraft-auth by dommilosz which uses my own appID by default.
 
 Authentication Types:
 * Mojang Authentication - standard mojang authentication using username and password

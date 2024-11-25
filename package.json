@@ -1,7 +1,7 @@
 {
-  "name": "minecraft-auth",
+  "name": "onelnchr-mc-auth",
   "version": "2.0.10",
-  "description": "Package to authenticate with minecraft using traditional yggdrasil, new microsoft authentication and non-premium.",
+  "description": "Package to authenticate with minecraft. Fork of minecraft-auth by dommilosz which uses my own appID by default.",
   "main": "dist/index.js",
   "scripts": {
     "test": "jest",
@@ -13,7 +13,6 @@
     "minecraft",
     "minecraft auth",
     "authentication",
-    "yggdrasil",
     "mojang",
     "microsoft oauth"
   ],
@@ -21,10 +20,10 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dommilosz/minecraft-auth.git"
+    "url": "https://github.com/Zmito26dev/onelnchr-mc-auth.git"
   },
   "bugs": {
-    "url": "https://github.com/dommilosz/minecraft-auth/issues"
+    "url": "https://github.com/Zmito26dev/onelnchr-mc-auth/issues"
   },
   "engines": {
     "node": ">=16"

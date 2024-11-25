@@ -15,8 +15,8 @@ import {createHash, randomBytes} from "node:crypto";
 let config: MSConfigType = {
     scope: "XboxLive.signin offline_access",
     redirectURL: "http://localhost:8080/token",
-    appID: "747bf062-ab9c-4690-842d-a77d18d4cf82",
-    mode: "SPA", selectAccount: false
+    appID: "055b9745-e08e-4b35-a819-de33bddb4a6d",
+    mode: "SPA", selectAccount: true
 }
 
 
