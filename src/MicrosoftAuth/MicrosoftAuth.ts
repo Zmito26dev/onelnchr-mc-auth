@@ -14,11 +14,11 @@ import {createHash, randomBytes} from "node:crypto";
 
 let config: MSConfigType = {
     scope: "XboxLive.signin offline_access",
-    redirectURL: "http://localhost:8080/token",
+    redirectURL: "http://localhost:2626/token",
     appID: "055b9745-e08e-4b35-a819-de33bddb4a6d",
-    mode: "SPA", selectAccount: true
-}
-
+    appSecret: "jOd8Q~ws.Xrbt4Gk-JJI9GgN4dnPoOMmC4WCyaqu",
+    mode: "Web", selectAccount: true
+};
 
 export function setup(_config: Partial<MSConfigType>) {
     if (_config.appSecret) {
@@ -151,7 +151,7 @@ async function _listenForCode(server: ListeningHttpServer, serverConfig: ServerC
 }
 
 export async function listenForCode(_serverConfig: Partial<ServerConfigType> = {}): Promise<string> {
-    const serverConfig: ServerConfigType = {port: 8080, host: "localhost", timeout: 30 * 1000, ..._serverConfig}
+    const serverConfig: ServerConfigType = {port: 2626, host: "localhost", timeout: 200 * 1000, redirectAfterAuth: "https://onelauncher.zmito.eu/launcher/afterauth", ..._serverConfig}
 
     const server = await createServer(serverConfig);
     return await _listenForCode(server, serverConfig);

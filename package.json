@@ -1,6 +1,6 @@
 {
   "name": "onelnchr-mc-auth",
-  "version": "2.0.2",
+  "version": "2.0.4",
   "description": "Package to authenticate with minecraft. Fork of minecraft-auth by dommilosz which uses my own appID by default.",
   "main": "dist/index.js",
   "scripts": {
