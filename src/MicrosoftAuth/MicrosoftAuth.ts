@@ -12,11 +12,14 @@ import {AuthenticationError, ListeningHttpServer, PKCEPairType} from "../types";
 
 import {createHash, randomBytes} from "node:crypto";
 
+import * as dotenv from 'dotenv';
+dotenv.config();
+
 let config: MSConfigType = {
     scope: "XboxLive.signin offline_access",
     redirectURL: "http://localhost:2626/token",
     appID: "055b9745-e08e-4b35-a819-de33bddb4a6d",
-    appSecret: "jOd8Q~ws.Xrbt4Gk-JJI9GgN4dnPoOMmC4WCyaqu",
+    appSecret: process.env.MSA_APPSECRET || "",
     mode: "Web", selectAccount: true
 };
 
