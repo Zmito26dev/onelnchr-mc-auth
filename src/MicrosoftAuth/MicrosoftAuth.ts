@@ -15,20 +15,19 @@ import {createHash, randomBytes} from "node:crypto";
 import * as dotenv from 'dotenv';
 dotenv.config();
 
+const appSecret = process.env.MSA_APPSECRET || ""
+
 let config: MSConfigType = {
     scope: "XboxLive.signin offline_access",
     redirectURL: "http://localhost:2626/token",
     appID: "055b9745-e08e-4b35-a819-de33bddb4a6d",
-    appSecret: process.env.MSA_APPSECRET || "",
-    mode: "Web", selectAccount: true
+    appSecret: appSecret,
+    mode: "Web", 
+    selectAccount: true
 };
 
 export function setup(_config: Partial<MSConfigType>) {
-    if (_config.appSecret) {
-        config = {...config, mode: "Web", ..._config};
-    } else {
-        config = {...config, mode: "SPA", ..._config};
-    }
+    config = {...config, mode: "Web", ..._config};
 }
 
 async function createServer(serverConfig: ServerConfigType): Promise<ListeningHttpServer> {
