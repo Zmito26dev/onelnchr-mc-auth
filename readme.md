@@ -1,6 +1,6 @@
-# Electron MC Auth
+# OneLnchr MC Auth
 
-![npm bundle size](https://img.shields.io/bundlephobia/min/electron-mc-auth?label=npm%20size)
+![npm bundle size](https://img.shields.io/bundlephobia/min/onelnchr-mc-auth?label=npm%20size)
 
 **Encrypted Minecraft authentication and profile manager for Electron launchers** with Microsoft authentication support.
 
@@ -17,7 +17,7 @@
 ## Installation
 
 ```bash
-npm install electron-mc-auth
+npm install onelnchr-mc-auth
 ```
 
 ## Configuration
@@ -40,7 +40,7 @@ ENCRYPTION_TOKEN=your-secret-encryption-key
 ## Quick Start
 
 ```typescript
-import { AccountManager, MicrosoftAuth, MicrosoftAccount } from 'electron-mc-auth';
+import { AccountManager, MicrosoftAuth, MicrosoftAccount } from 'onelnchr-mc-auth';
 
 // Initialize profile manager
 const manager = new AccountManager();
@@ -63,7 +63,7 @@ console.log(`Logged in as ${account.username}`);
 ### Microsoft Authentication
 
 ```typescript
-import { AccountManager, MicrosoftAuth, MicrosoftAccount } from 'electron-mc-auth';
+import { AccountManager, MicrosoftAuth, MicrosoftAccount } from 'onelnchr-mc-auth';
 
 const manager = new AccountManager();
 manager.initialize();
@@ -88,7 +88,7 @@ console.log(account.profile);       // Full profile with skins
 
 ```typescript
 import { Client } from 'minecraft-launcher-core';
-import { AccountManager, MicrosoftAccount } from 'electron-mc-auth';
+import { AccountManager, MicrosoftAccount } from 'onelnchr-mc-auth';
 
 const manager = new AccountManager();
 manager.initialize();
@@ -135,7 +135,7 @@ if (profile instanceof MicrosoftAccount) {
 ```typescript
 // main.js (Electron main process)
 import { app, ipcMain } from 'electron';
-import { AccountManager, MicrosoftAuth, MicrosoftAccount } from 'electron-mc-auth';
+import { AccountManager, MicrosoftAuth, MicrosoftAccount } from 'onelnchr-mc-auth';
 import { Client } from 'minecraft-launcher-core';
 import path from 'path';
 
@@ -249,7 +249,7 @@ const count = manager.getAccountCount();
 ### Cracked Accounts (Offline Mode)
 
 ```typescript
-import { CrackedAccount } from 'electron-mc-auth';
+import { CrackedAccount } from 'onelnchr-mc-auth';
 
 const account = new CrackedAccount('username');
 await manager.addAccount(account);
@@ -338,7 +338,7 @@ This library is specifically designed for Electron-based Minecraft launchers:
 
 ```typescript
 // In your Electron main process
-import { AccountManager } from 'electron-mc-auth';
+import { AccountManager } from 'onelnchr-mc-auth';
 import { app } from 'electron';
 import path from 'path';
 
@@ -358,7 +358,7 @@ ipcMain.handle('add-profile', async (event, account) => {
 ## Error Handling
 
 ```typescript
-import { AuthenticationError, OwnershipError } from 'electron-mc-auth';
+import { AuthenticationError, OwnershipError } from 'onelnchr-mc-auth';
 
 try {
     await account.authFlow(code);
@@ -425,7 +425,7 @@ Special thanks to dommilosz for the original implementation that served as the f
 
 ## License
 
-ISC
+MIT
 
 ## Author
 
@@ -433,6 +433,6 @@ Zmito26dev
 
 ## Links
 
-- [GitHub Repository](https://github.com/Zmito26dev/electron-mc-auth)
-- [NPM Package](https://www.npmjs.com/package/electron-mc-auth)
+- [GitHub Repository](https://github.com/Zmito26dev/onelnchr-mc-auth)
+- [NPM Package](https://www.npmjs.com/package/onelnchr-mc-auth)
 - [MCLC Documentation](https://github.com/Pierce01/MinecraftLauncher-core)

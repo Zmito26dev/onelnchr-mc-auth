@@ -1,5 +1,5 @@
 {
-  "name": "electron-mc-auth",
+  "name": "onelnchr-mc-auth",
   "version": "1.0.0",
   "description": "Encrypted Minecraft profile manager for Electron launchers with Microsoft authentication support",
   "main": "dist/index.js",
@@ -20,13 +20,13 @@
     "encrypted storage"
   ],
   "author": "Zmito26dev",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Zmito26dev/electron-mc-auth.git"
+    "url": "https://github.com/Zmito26dev/onelnchr-mc-auth.git"
   },
   "bugs": {
-    "url": "https://github.com/Zmito26dev/electron-mc-auth/issues"
+    "url": "https://github.com/Zmito26dev/onelnchr-mc-auth/issues"
   },
   "engines": {
     "node": ">=16"
