@@ -1,5 +1,5 @@
 import http, { IncomingMessage, ServerResponse } from "http";
-import { HttpPost } from "http-client-methods";
+import { HttpPost } from "../utils/HttpClient";
 import {
     MCTokenResponse,
     MSConfigType,

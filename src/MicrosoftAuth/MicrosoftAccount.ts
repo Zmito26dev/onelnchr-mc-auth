@@ -1,7 +1,7 @@
 import { AuthenticationError, PKCEPairType } from "../types";
 import * as MicrosoftAuth from "./MicrosoftAuth";
 import { Account } from "../Account";
-import { HttpGet } from "http-client-methods";
+import { HttpGet } from "../utils/HttpClient";
 
 export class MicrosoftAccount extends Account {
     refreshToken?: string;
